@@ -12,6 +12,6 @@
 * https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.random.normal.html
 * https://stackoverflow.com/questions/26456180/initializing-a-matrix-with-random-number-from-given-range-python
 * https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.shuffle.html
-* hhttps://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.array_equal.html
+* https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.array_equal.html
 * https://stackoverflow.com/questions/230751/how-to-flush-output-of-print-function
 
