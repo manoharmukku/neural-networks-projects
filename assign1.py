@@ -13,7 +13,7 @@ def signum(x):
 m = 2 # Number of features
 n = 10000 # Number of samples
 learning_rate = 0.1
-max_iterations = 10000 # Number of iterations
+max_iterations = 10000 # Maximum number of iterations
 
 # Randomly generate two dimensional data using Normal distribution for two linearly separable classes
 mean1, sd1 = (8.0, 10.0), 1.0 # Mean and standard deviation for class 1 2d features
@@ -47,7 +47,7 @@ for i in range(max_iterations):
     # Randomly shuffle the data
     np.random.shuffle(data)
 
-    # Iterate over all the rows of the data and train the model
+    # Iterate over all the rows of the data and train the perceptron model
     for row in data:
         input_vector = row[0:m+1].T.reshape(m+1, 1) # (m+1, 1) input vector including +1 bias term
         desired_output = row[m+1] # Desired output corresponding to the input vector, +1 or -1
@@ -59,8 +59,8 @@ for i in range(max_iterations):
         weight_vector += learning_rate * (desired_output - actual_output) * input_vector
 
     # If no change in weights from previous iteration
-    # if (weight_vector.all() == weights_prev.all()):
-    #     break
+    if (np.array_equal(weight_vector.reshape(m+1), weights_prev.reshape(m+1))):
+        break
 
 print ("\nDone training\n")
 
