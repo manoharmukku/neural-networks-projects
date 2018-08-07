@@ -8,10 +8,16 @@
 * Print the decision boundary for both
 
 ###### References
-* Sections [1.2, 1.3] in Neural Networks and Learning Machines, Simon Haykin, Third Edition
+* Sections _1.2, 1.3_ from book: _Neural Networks and Learning Machines, Simon Haykin, Third Edition, Prentice Hall_
 * https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.random.normal.html
 * https://stackoverflow.com/questions/26456180/initializing-a-matrix-with-random-number-from-given-range-python
 * https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.shuffle.html
+* https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.ndarray.copy.html
+* https://stackoverflow.com/questions/11874767/real-time-plotting-in-while-loop-with-matplotlib/15720891
+* https://matplotlib.org/api/_as_gen/matplotlib.pyplot.close.html
+* https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.ndarray.flatten.html
 * https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.array_equal.html
 * https://stackoverflow.com/questions/230751/how-to-flush-output-of-print-function
-
+* https://stackoverflow.com/questions/22294241/plotting-a-decision-boundary-separating-2-classes-using-matplotlibs-pyplot
+* https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.linspace.html
+* https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html
