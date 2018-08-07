@@ -7,7 +7,7 @@
 * Train the perceptron model on ~both~ the data
 * Plot the decision bounding on each iteration using matplotlib
 * How to run: 
-```$ python assignment.py n_samples learning_rate max_iterations```
+```$ python assig1.py n_samples learning_rate max_iterations```
 
 ###### References
 * Sections _1.2, 1.3_ from book: _Neural Networks and Learning Machines, Simon Haykin, Third Edition, Prentice Hall_
