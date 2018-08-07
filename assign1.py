@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import sys
 from sys import stdout
 import matplotlib
 from matplotlib import pyplot as plt
@@ -13,11 +14,16 @@ def signum(x):
 
 #### For 2D (2 featurs) data ####
 
-# Parameters
+# Sanity check of command line arguments
+if (len(sys.argv) != 4):
+    print ("Usage: python assignment.py n_samples learning_rate max_iterations")
+    sys.exit()
+
+# Get the parameters from command line
 m = 2 # Number of features
-n = 10000 # Number of samples
-learning_rate = 0.1
-max_iterations = 10000 # Maximum number of iterations
+n = int(sys.argv[1]) # Number of samples from command line
+learning_rate = float(sys.argv[2]) # Learning rate from command line
+max_iterations = int(sys.argv[3]) # Maximum number of iterations from command line
 
 # Randomly generate two dimensional data using Normal distribution for two linearly separable classes
 mean1, sd1 = (5.0, 6.0), 1.0 # Mean and standard deviation for class 1 2d features
@@ -65,7 +71,7 @@ for i in range(max_iterations):
     b = weight_vector[0][0]
     w1 = weight_vector[1][0]
     w2 = weight_vector[2][0]
-    x = np.linspace(-8, 8)
+    x = np.linspace(-3, 7)
     y = (-w1/w2) * x + (-b/w2)
 
     plt.scatter(class1_input_data[:,0], class1_input_data[:,1], c='blue', marker = '+')
@@ -103,7 +109,7 @@ w2 = weight_vector[2][0]
 print ("({}) * x1 + ({}) * x2 + ({}) = 0\n".format(w1, w2, b))
 
 # Plot the final decision bounday
-x = np.linspace(-8, 8)
+x = np.linspace(-3, 7)
 y = (-w1/w2) * x + (-b/w2)
 
 plt.scatter(class1_input_data[:,0], class1_input_data[:,1], c='blue', marker = '+')
