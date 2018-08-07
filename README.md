@@ -3,9 +3,9 @@
 #### Assignment 1: Implement Rosenblatt's Perceptron Model
 * Generate data of two linearly separable classes using Normal distribution
     - Once for two features
-    - Once for three features
-* Train the perceptron model on both the data
-* Print the decision boundary for both
+    - ~Once for three features~
+* Train the perceptron model on ~both~ the data
+* Plot the decision bounding on each iteration using matplotlib
 
 ###### References
 * Sections _1.2, 1.3_ from book: _Neural Networks and Learning Machines, Simon Haykin, Third Edition, Prentice Hall_
