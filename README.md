@@ -1,16 +1,15 @@
 ## Assignments of M.Tech CS' Neural Networks course at ISI Kolkata
 
 #### Assignment 1: Implement Rosenblatt's Perceptron Model
+* Get the number of features, number of samples, learning rate, max iterations from the user
 * Generate data of two linearly separable classes using Normal distribution
-    - Once for two features
-    - ~Once for three features (code commented)~
-* Train the perceptron model on ~both~ the data
-* Plot the decision bounding on each iteration using matplotlib
+* Train the perceptron model on the data
+* Plot the decision bounding on each iteration using matplotlib (if 2D data)
 * How to run: 
-```$ python assig1.py n_samples learning_rate max_iterations```
+```$ python assign1.py n_features n_samples learning_rate max_iterations```
 
 ###### References
-* Sections _1.2, 1.3_ from book: _Neural Networks and Learning Machines, Simon Haykin, Third Edition, Prentice Hall_
+* Sections 1.2, 1.3 from book: _Neural Networks and Learning Machines, Simon Haykin, Third Edition, Prentice Hall_
 * https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.random.normal.html
 * https://stackoverflow.com/questions/26456180/initializing-a-matrix-with-random-number-from-given-range-python
 * https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.shuffle.html
