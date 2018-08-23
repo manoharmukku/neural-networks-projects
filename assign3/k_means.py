@@ -27,6 +27,12 @@ class k_means_clustering(object):
 
         return self.centroids
 
+    def initialize_centroids(self):
+        rand_sample = random.sample(range(0, self.n_samples-1), self.K)
+        
+        for i in range(self.K):
+            self.centroids = np.copy(self.data[rand_sample[i]])
+
     def get_min_centroid(self, row):
         distance = (self.centroids - row)**2
         distance = np.sum(distance, axis = 1)
@@ -42,7 +48,7 @@ class k_means_clustering(object):
         assigned_points = [[] for i in range(self.K)]
 
         for i, row in enumerate(self.data):
-            assigned_points[self.assigned_centroids[i]].append(row)
+            assigned_points[self.assigned_centroids[i]].append(np.tolist(row))
 
         for i in range(self.K):
             points = np.asarray(assigned_points[i])
