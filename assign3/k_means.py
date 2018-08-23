@@ -39,4 +39,11 @@ class k_means_clustering(object):
             assigned_centroids[i] = get_min_centroid(row)
 
     def update_centroids(self):
-        
+        assigned_points = [[] for i in range(self.K)]
+
+        for i, row in enumerate(self.data):
+            assigned_points[self.assigned_centroids[i]].append(row)
+
+        for i in range(self.K):
+            points = np.asarray(assigned_points[i])
+            self.centroids[i] = np.copy(np.mean(points, axis = 0))
